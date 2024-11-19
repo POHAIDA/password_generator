@@ -1,0 +1,57 @@
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <h1 class="title">
+        Generate a
+        <br />
+        <span>random password</span>
+      </h1>
+      <p class="subtitle">Never use an insecure password again.</p>
+      <div class="length_item_container">
+        <p class="length">
+          Enter the length
+          <br />
+          (max - 15 symbols)
+        </p>
+        <input class="input" type="number" />
+      </div>
+      <p id="wrong_value" class="validation"></p>
+
+      <div class="switch_containers">
+
+        <div class="switch_container">
+          <label class="switch" >
+            <input id="switch_number" type="checkbox" checked/>
+            <span class="slider round"></span>
+          </label>
+          <p>Include number</p>
+        </div>
+  
+        <div class="switch_container">
+          <label class="switch" >
+            <input id="switch_symbols" type="checkbox" checked/>
+            <span class="slider round"></span>
+          </label>
+          <p>Include symbols</p>
+        </div>
+
+      </div>
+
+      
+      <button class="generate_button">Generate passwords</button>
+      <hr />
+      <div class="paswords_items">
+        <p  class="password1 password"></p>
+        <p  class="password2 password"></p>
+      </div>
+      <p  class="copied"></p>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
